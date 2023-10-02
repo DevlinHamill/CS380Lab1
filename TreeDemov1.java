@@ -240,11 +240,13 @@ class Node{
 	      t1.postOrderTraversal(t1.root);
 	      System.out.println();
 	  
-	      System.out.println(t1.find(t1.root, 24));
+		  int value = 24;
+
+	      System.out.println("Does the value " + value + " exists in the tree: "  + t1.find(t1.root, value));
 	      
-	      System.out.println(t1.getMin(t1.root));
+	      System.out.println( "Min value in the tree: "+t1.getMin(t1.root));
 	      
-	      System.out.println(t1.getMax(t1.root));
+	      System.out.println("Max value in the tree: "+t1.getMax(t1.root));
 	      
 	   }  
 	}
