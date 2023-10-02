@@ -60,7 +60,14 @@ class Node{
 	   @param root of a tree
 	   */
 	   public void preOrderTraversal(Node root){
-	
+			if(root == null) {
+				return;
+			}else {
+				System.out.print(root.value + " " );
+				preOrderTraversal(root.left);
+				preOrderTraversal(root.right);
+				
+			}
 	   }
 
 	   
