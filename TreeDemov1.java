@@ -77,7 +77,16 @@ class Node{
 	    * @param takes in the root node of a binary search tree
 	    */
 	   public void inOrderTraversal(Node root){
-	      
+
+					   
+			if(root == null) {
+				return;
+			}else {
+				inOrderTraversal(root.left);
+				System.out.print(root.value+ " ");
+				inOrderTraversal(root.right);
+			
+			}
 
 	   }
 	   
