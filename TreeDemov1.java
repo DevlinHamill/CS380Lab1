@@ -1,5 +1,13 @@
 package assignmentoneCS380;
 
+/**
+ * An implementation of a binary search tree.
+ * <p>
+ * For CS380 lab assignment 1
+ * @Author Devlin Hamill
+ *   
+ */
+
 class Node{
 	   int value;
 	   Node left, right;
