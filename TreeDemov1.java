@@ -144,9 +144,17 @@ class Node{
 	    */
 	   public int getMin(Node root){
       //implement in here
-		  
-	
-		  return 0;
+			if(root == null) {
+				return 0;
+			}
+
+			if( root.left == null ){
+				return root.value;
+			}else {
+				getMin(root.left);
+			}
+			
+			return getMin(root.left);
 	   }
 	  
 	  
